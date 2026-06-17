@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Platform — Ideneumo CIAM</title>
+<meta name="description" content="The complete Ideneumo CIAM platform: authentication, MFA, passkeys, SSO, identity verification, user management, risk-based auth and APIs." />
+<meta property="og:title" content="Ideneumo Platform — CIAM engineered like a helmet" />
+<meta property="og:description" content="Engineered protection layers for every customer identity journey." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/png" href="https://id-preview--cb68a18b-432e-4e56-81ee-a3fb90b17c57.lovable.app/__l5e/assets-v1/54765de3-7904-435f-9f9c-ee464a0096fe/ideneumo-logo.png" />
+<link rel="apple-touch-icon" href="https://id-preview--cb68a18b-432e-4e56-81ee-a3fb90b17c57.lovable.app/__l5e/assets-v1/54765de3-7904-435f-9f9c-ee464a0096fe/ideneumo-logo.png" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Satoshi','Inter','ui-sans-serif','system-ui','sans-serif'],
+        display: ['Satoshi','Space Grotesk','ui-sans-serif','system-ui','sans-serif'],
+        mono: ['ui-monospace','SFMono-Regular','Menlo','Monaco','Consolas','monospace'],
+      },
+      animation: {
+        'spin-slow': 'spin 28s linear infinite',
+        'float': 'float 9s ease-in-out infinite',
+        'marquee': 'marquee 40s linear infinite',
+        'rise': 'rise .9s cubic-bezier(.2,.7,.2,1) both',
+      },
+      keyframes: {
+        float: { '0%,100%': { transform:'translateY(0)' }, '50%': { transform:'translateY(-12px)' } },
+        marquee: { from: { transform:'translateX(0)' }, to: { transform:'translateX(-50%)' } },
+        rise: { from:{opacity:'0',transform:'translateY(24px)'}, to:{opacity:'1',transform:'translateY(0)'} },
+      }
+    }
+  }
+};
+</script>
+<link rel="stylesheet" href="assets/styles.css" />
+
+</head>
+<body class="min-h-screen bg-white">
+<div id="site-header"></div>
+<main>
+
+<section class="relative pt-12 md:pt-20 pb-16 md:pb-20 overflow-hidden border-b border-[color:var(--color-border)]">
+  <div class="absolute inset-0 -z-10 bg-grad-soft opacity-70"></div>
+  <div class="container-x">
+    <div class="flex items-center justify-between border-b border-[color:var(--color-border)] pb-4 mb-10 text-[10px] font-mono tracking-[0.3em] uppercase text-[color:var(--color-muted-foreground)]">
+      <span class="text-[color:var(--color-tangerine)]">● The Ideneumo Platform · v4</span>
+      <span>8 layers · 1 engine</span>
+    </div>
+    <div class="grid lg:grid-cols-[1.02fr_1fr] gap-10 lg:gap-16 items-center">
+      <div>
+        <h1 class="font-display font-black text-5xl md:text-7xl lg:text-[92px] leading-[0.9] tracking-[-0.045em] uppercase">
+          CIAM,<br><span class="text-gradient-brand">layered</span> like a<br>helmet.
+        </h1>
+        <p class="mt-7 text-lg md:text-xl text-[color:var(--color-charcoal)] max-w-xl leading-relaxed">
+          Eight engineered protection layers — authentication, orchestration, and identity intelligence — delivered as one platform.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="contact.html" class="btn-primary">Book platform tour</a>
+          <a href="#layers" class="btn-ghost text-[color:var(--color-tangerine)]">See the 8 layers</a>
+        </div>
+      </div>
+      <div class="relative min-h-[520px] lg:min-h-[580px]">
+        <div class="absolute inset-x-6 top-8 h-[360px] rounded-full bg-grad-brand opacity-20 blur-3xl"></div>
+        <div class="absolute left-1/2 top-12 h-[430px] w-[430px] -translate-x-1/2 rounded-full" style="border:1px solid rgba(255,106,0,.25);"></div>
+        <div class="absolute left-1/2 top-2 h-[520px] w-[520px] -translate-x-1/2 rounded-full border border-[color:var(--color-border)]"></div>
+        <div class="absolute left-1/2 top-24 h-[300px] w-[300px] -translate-x-1/2 rounded-full animate-spin-slow" style="border:1px dashed rgba(255,106,0,.3);"></div>
+        <div class="relative z-10 mx-auto flex min-h-[520px] max-w-[560px] items-center justify-center">
+          <img src="https://id-preview--cb68a18b-432e-4e56-81ee-a3fb90b17c57.lovable.app/__l5e/assets-v1/0c0ded86-31d0-4da2-8b91-cbae45a26686/hero-helmet.webp" alt="Ideneumo helmet" class="w-full max-w-[500px] animate-float drop-helmet-strong" />
+          <div class="absolute left-0 top-12 rounded-2xl border border-[color:var(--color-border)] bg-white/95 px-4 py-3 shadow-pop backdrop-blur">
+            <div class="text-[9px] font-mono uppercase tracking-[0.28em] text-[color:var(--color-muted-foreground)]">Verified</div>
+            <div class="mt-1 flex items-center gap-2 font-display text-xl font-black text-gradient-brand">
+              99.97% <i data-lucide="shield-check" class="h-4 w-4 text-[color:var(--color-cherry)]"></i>
+            </div>
+          </div>
+          <div class="absolute right-0 top-28 rounded-2xl bg-[color:var(--color-ink)] px-4 py-3 text-white shadow-pop">
+            <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.22em] text-[color:var(--color-tangerine)]">
+              <span class="relative flex h-2 w-2">
+                <span class="absolute inline-flex h-full w-full rounded-full bg-[color:var(--color-tangerine)] opacity-75 animate-ping"></span>
+                <span class="relative inline-flex h-2 w-2 rounded-full bg-[color:var(--color-tangerine)]"></span>
+              </span>
+              Live policy
+            </div>
+            <div class="mt-2 font-display text-2xl font-black">142ms</div>
+            <div class="text-[10px] text-white/60">average decision</div>
+          </div>
+          <div class="absolute bottom-10 left-4 right-4 rounded-2xl border border-[color:var(--color-border)] bg-white/95 p-4 shadow-card backdrop-blur">
+            <div class="grid grid-cols-4 gap-2">
+      <div class="rounded-xl bg-[color:var(--color-cream)] p-3 text-center">
+        <i data-lucide="log-in" class="mx-auto h-4 w-4 text-[color:var(--color-tangerine)] block"></i>
+        <div class="mt-2 text-[9px] font-mono tracking-[0.18em] text-[color:var(--color-muted-foreground)]">L01</div>
+      </div>
+      <div class="rounded-xl bg-[color:var(--color-cream)] p-3 text-center">
+        <i data-lucide="key-round" class="mx-auto h-4 w-4 text-[color:var(--color-tangerine)] block"></i>
+        <div class="mt-2 text-[9px] font-mono tracking-[0.18em] text-[color:var(--color-muted-foreground)]">L02</div>
+      </div>
+      <div class="rounded-xl bg-[color:var(--color-cream)] p-3 text-center">
+        <i data-lucide="fingerprint" class="mx-auto h-4 w-4 text-[color:var(--color-tangerine)] block"></i>
+        <div class="mt-2 text-[9px] font-mono tracking-[0.18em] text-[color:var(--color-muted-foreground)]">L03</div>
+      </div>
+      <div class="rounded-xl bg-[color:var(--color-cream)] p-3 text-center">
+        <i data-lucide="shield-check" class="mx-auto h-4 w-4 text-[color:var(--color-tangerine)] block"></i>
+        <div class="mt-2 text-[9px] font-mono tracking-[0.18em] text-[color:var(--color-muted-foreground)]">L04</div>
+      </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-px bg-[color:var(--color-border)] rounded-2xl overflow-hidden border border-[color:var(--color-border)]">
+      <div class="bg-white p-5">
+      <div class="font-display text-3xl md:text-4xl font-black text-gradient-brand leading-none">142ms</div>
+      <div class="mt-2 text-[10px] font-mono uppercase tracking-[0.25em] text-[color:var(--color-muted-foreground)]">Avg auth latency</div>
+    </div><div class="bg-white p-5">
+      <div class="font-display text-3xl md:text-4xl font-black text-gradient-brand leading-none">8</div>
+      <div class="mt-2 text-[10px] font-mono uppercase tracking-[0.25em] text-[color:var(--color-muted-foreground)]">Protection layers</div>
+    </div><div class="bg-white p-5">
+      <div class="font-display text-3xl md:text-4xl font-black text-gradient-brand leading-none">99.99%</div>
+      <div class="mt-2 text-[10px] font-mono uppercase tracking-[0.25em] text-[color:var(--color-muted-foreground)]">Platform uptime</div>
+    </div><div class="bg-white p-5">
+      <div class="font-display text-3xl md:text-4xl font-black text-gradient-brand leading-none">180+</div>
+      <div class="mt-2 text-[10px] font-mono uppercase tracking-[0.25em] text-[color:var(--color-muted-foreground)]">Pre-built connectors</div>
+    </div>
+    </div>
+    <div class="mt-12"><div class="h-2 w-full rounded-full " style="background:linear-gradient(90deg,#FF6A00 0 25%,#FF4D4D 25% 50%,#E31E3A 50% 75%,#6B0F2E 75% 100%);"></div></div>
+  </div>
+</section>
+<section id="layers" class="py-16 md:py-24">
+  <div class="container-x">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius">
+        <div class="h-11 w-11 rounded-xl bg-[color:var(--color-peach)] grid place-items-center mb-5"><i data-lucide="log-in" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <h3 class="font-display text-lg font-bold">Authentication</h3>
+        <p class="mt-2 text-sm text-[color:var(--color-charcoal)] leading-relaxed">Modern, frictionless sign-in across web, mobile and partner portals.</p>
+        <div class="mt-5 text-[10px] font-mono tracking-[0.25em] text-[color:var(--color-tangerine)]">LAYER 01</div>
+      </div>
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius-r">
+        <div class="h-11 w-11 rounded-xl bg-[color:var(--color-peach)] grid place-items-center mb-5"><i data-lucide="key-round" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <h3 class="font-display text-lg font-bold">MFA</h3>
+        <p class="mt-2 text-sm text-[color:var(--color-charcoal)] leading-relaxed">TOTP, SMS, push and adaptive step-up — context-aware by default.</p>
+        <div class="mt-5 text-[10px] font-mono tracking-[0.25em] text-[color:var(--color-tangerine)]">LAYER 02</div>
+      </div>
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius">
+        <div class="h-11 w-11 rounded-xl bg-[color:var(--color-peach)] grid place-items-center mb-5"><i data-lucide="fingerprint" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <h3 class="font-display text-lg font-bold">Passkeys</h3>
+        <p class="mt-2 text-sm text-[color:var(--color-charcoal)] leading-relaxed">FIDO2 / WebAuthn passwordless flows that customers actually use.</p>
+        <div class="mt-5 text-[10px] font-mono tracking-[0.25em] text-[color:var(--color-tangerine)]">LAYER 03</div>
+      </div>
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius-r">
+        <div class="h-11 w-11 rounded-xl bg-[color:var(--color-peach)] grid place-items-center mb-5"><i data-lucide="shield-check" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <h3 class="font-display text-lg font-bold">SSO</h3>
+        <p class="mt-2 text-sm text-[color:var(--color-charcoal)] leading-relaxed">SAML, OIDC, and SCIM for partner, employee and customer portals.</p>
+        <div class="mt-5 text-[10px] font-mono tracking-[0.25em] text-[color:var(--color-tangerine)]">LAYER 04</div>
+      </div>
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius">
+        <div class="h-11 w-11 rounded-xl bg-[color:var(--color-peach)] grid place-items-center mb-5"><i data-lucide="users" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <h3 class="font-display text-lg font-bold">Identity verification</h3>
+        <p class="mt-2 text-sm text-[color:var(--color-charcoal)] leading-relaxed">Document, biometric and data checks that keep fraud out.</p>
+        <div class="mt-5 text-[10px] font-mono tracking-[0.25em] text-[color:var(--color-tangerine)]">LAYER 05</div>
+      </div>
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius-r">
+        <div class="h-11 w-11 rounded-xl bg-[color:var(--color-peach)] grid place-items-center mb-5"><i data-lucide="activity" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <h3 class="font-display text-lg font-bold">User management</h3>
+        <p class="mt-2 text-sm text-[color:var(--color-charcoal)] leading-relaxed">Lifecycle, profiles, consent and progressive profiling.</p>
+        <div class="mt-5 text-[10px] font-mono tracking-[0.25em] text-[color:var(--color-tangerine)]">LAYER 06</div>
+      </div>
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius">
+        <div class="h-11 w-11 rounded-xl bg-[color:var(--color-peach)] grid place-items-center mb-5"><i data-lucide="plug" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <h3 class="font-display text-lg font-bold">API integrations</h3>
+        <p class="mt-2 text-sm text-[color:var(--color-charcoal)] leading-relaxed">Pre-built connectors and SDKs to launch in days, not quarters.</p>
+        <div class="mt-5 text-[10px] font-mono tracking-[0.25em] text-[color:var(--color-tangerine)]">LAYER 07</div>
+      </div>
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius-r">
+        <div class="h-11 w-11 rounded-xl bg-[color:var(--color-peach)] grid place-items-center mb-5"><i data-lucide="lock" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <h3 class="font-display text-lg font-bold">Risk-based auth</h3>
+        <p class="mt-2 text-sm text-[color:var(--color-charcoal)] leading-relaxed">Real-time signals continuously evaluate trust and step up when needed.</p>
+        <div class="mt-5 text-[10px] font-mono tracking-[0.25em] text-[color:var(--color-tangerine)]">LAYER 08</div>
+      </div></div>
+  </div>
+</section>
+<section class="py-16 md:py-24 bg-[color:var(--color-warm)]">
+  <div class="container-x">
+    <div class="text-center max-w-2xl mx-auto">
+      <div class="eyebrow justify-center">How it works</div>
+      <h2 class="mt-4 font-display font-black text-4xl md:text-5xl leading-[1.02] tracking-[-0.035em]">
+        Three simple steps to a<span class="text-gradient-brand"> more secure journey.</span>
+      </h2>
+    </div>
+    <div class="mt-14 grid md:grid-cols-3 gap-6"><div class="rounded-2xl bg-white border border-[color:var(--color-border)] p-7 shadow-card">
+      <div class="text-5xl font-display font-black text-gradient-brand">01</div>
+      <h3 class="mt-4 font-display text-xl font-bold">Configure</h3>
+      <p class="mt-2 text-[color:var(--color-charcoal)]">Create journeys, policies and rules with intuitive templates and no code.</p>
+    </div><div class="rounded-2xl bg-white border border-[color:var(--color-border)] p-7 shadow-card">
+      <div class="text-5xl font-display font-black text-gradient-brand">02</div>
+      <h3 class="mt-4 font-display text-xl font-bold">Connect</h3>
+      <p class="mt-2 text-[color:var(--color-charcoal)]">Integrate with your apps and systems using our APIs and connectors.</p>
+    </div><div class="rounded-2xl bg-white border border-[color:var(--color-border)] p-7 shadow-card">
+      <div class="text-5xl font-display font-black text-gradient-brand">03</div>
+      <h3 class="mt-4 font-display text-xl font-bold">Go live</h3>
+      <p class="mt-2 text-[color:var(--color-charcoal)]">Launch with confidence and continuously optimize with real-time insights.</p>
+    </div></div>
+  </div>
+</section>
+
+<section id="contact" class="py-24 md:py-32">
+  <div class="container-x">
+    <div class="relative overflow-hidden rounded-[36px] bg-[color:var(--color-ink)] p-10 md:p-16 text-white shadow-pop">
+      <div class="absolute -top-32 -right-24 h-[480px] w-[480px] opacity-40"><svg viewBox="0 0 400 400" style="width:100%;height:100%;" aria-hidden><g fill="none" stroke="#FF6A00" stroke-width="2" stroke-linecap="round" opacity="0.6"><path d="M 160 230 a 40 36.80 0 0 1 80 0" opacity="1.00"/><path d="M 142 230 a 58 53.36 0 0 1 116 0" opacity="0.93"/><path d="M 124 230 a 76 69.92 0 0 1 152 0" opacity="0.86"/><path d="M 106 230 a 94 86.48 0 0 1 188 0" opacity="0.79"/><path d="M 88 230 a 112 103.04 0 0 1 224 0" opacity="0.72"/><path d="M 70 230 a 130 119.60 0 0 1 260 0" opacity="0.65"/><path d="M 52 230 a 148 136.16 0 0 1 296 0" opacity="0.58"/><path d="M 34 230 a 166 152.72 0 0 1 332 0" opacity="0.51"/><path d="M 16 230 a 184 169.28 0 0 1 368 0" opacity="0.44"/><path d="M -2 230 a 202 185.84 0 0 1 404 0" opacity="0.37"/></g></svg></div>
+      <div class="absolute bottom-0 right-0 left-0 opacity-90"><svg viewBox="0 0 1440 240" preserveAspectRatio="none" style="display:block;width:100%;height:140px;" aria-hidden>
+<path d="M0 180 Q 360 60 720 140 T 1440 100 V240 H0 Z" fill="#FF6A00"/>
+<path d="M0 200 Q 360 90 720 170 T 1440 130 V240 H0 Z" fill="#FF4D4D"/>
+<path d="M0 220 Q 360 130 720 200 T 1440 160 V240 H0 Z" fill="#E31E3A"/>
+<path d="M0 235 Q 360 170 720 220 T 1440 190 V240 H0 Z" fill="#6B0F2E"/>
+</svg></div>
+      <div class="relative grid md:grid-cols-[1.4fr_1fr] gap-10 items-end">
+        <div>
+          <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur text-[10px] font-bold uppercase tracking-[0.3em]">
+            <span class="h-1.5 w-1.5 rounded-full bg-[color:var(--color-tangerine)] animate-pulse"></span>
+            Now booking · Q3 enterprise pilots
+          </span>
+          <h2 class="mt-6 font-display font-black uppercase text-4xl md:text-6xl lg:text-7xl tracking-[-0.04em] leading-[0.95]">
+            Ready to deliver<br><span class="text-gradient-brand">secure access</span><br>your customers will love?
+          </h2>
+          <p class="mt-6 max-w-xl text-lg text-white/70 leading-relaxed">
+            See how Ideneumo makes login simple, secure, and built for every portal.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="contact.html" class="btn-primary">Book a Demo <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            <a href="platform.html" class="inline-flex items-center justify-center gap-2 h-[54px] px-6 rounded-[10px] border border-white/20 text-white font-semibold hover:bg-white/5 transition-colors" style="text-decoration:none;">
+              <i data-lucide="calendar" class="h-4 w-4"></i> See the platform
+            </a>
+          </div>
+        </div>
+        <div class="relative rounded-3xl bg-white/[0.04] backdrop-blur border border-white/10 p-6">
+          <div class="flex items-center justify-between text-[10px] font-mono uppercase tracking-[0.2em] text-white/50">
+            <span>session · london</span>
+            <span class="flex items-center gap-1.5"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span> live</span>
+          </div>
+          <div class="mt-5 space-y-3.5">
+      <div class="flex items-center justify-between border-b border-white/10 pb-3 last:border-0">
+        <div class="text-xs text-white/60 uppercase tracking-wider">Risk score</div>
+        <div class="text-right">
+          <div class="text-sm font-semibold">0.04</div>
+          <div class="text-[10px] font-mono text-[color:var(--color-tangerine)] uppercase tracking-wider">low</div>
+        </div>
+      </div>
+      <div class="flex items-center justify-between border-b border-white/10 pb-3 last:border-0">
+        <div class="text-xs text-white/60 uppercase tracking-wider">Auth factor</div>
+        <div class="text-right">
+          <div class="text-sm font-semibold">Passkey · WebAuthn</div>
+          <div class="text-[10px] font-mono text-[color:var(--color-tangerine)] uppercase tracking-wider">verified</div>
+        </div>
+      </div>
+      <div class="flex items-center justify-between border-b border-white/10 pb-3 last:border-0">
+        <div class="text-xs text-white/60 uppercase tracking-wider">Device</div>
+        <div class="text-right">
+          <div class="text-sm font-semibold">Trusted · 17 days</div>
+          <div class="text-[10px] font-mono text-[color:var(--color-tangerine)] uppercase tracking-wider">ok</div>
+        </div>
+      </div>
+      <div class="flex items-center justify-between border-b border-white/10 pb-3 last:border-0">
+        <div class="text-xs text-white/60 uppercase tracking-wider">Policy</div>
+        <div class="text-right">
+          <div class="text-sm font-semibold">EU · UK · GDPR</div>
+          <div class="text-[10px] font-mono text-[color:var(--color-tangerine)] uppercase tracking-wider">compliant</div>
+        </div>
+      </div></div>
+          <div class="mt-5 flex items-center gap-2 text-[10px] font-mono text-white/40">
+            <span style="display:inline-block;width:16px;height:16px;background:var(--grad-brand);border-radius:4px;"></span> Ideneumo Aegis · v4.2
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</main>
+<div id="site-footer"></div>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>

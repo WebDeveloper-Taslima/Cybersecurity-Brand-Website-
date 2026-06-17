@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ideneumo — Identity security, engineered for trust</title>
+<meta name="description" content="Customer identity security built with the precision, protection and confidence of a championship helmet. CIAM, MFA, passkeys, SSO and risk-based auth — for every portal." />
+<meta property="og:title" content="Ideneumo — Identity Engineered for Trust" />
+<meta property="og:description" content="UK-based CIAM specialists. Secure sign-up, trusted login and frictionless access for every customer portal." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/png" href="https://id-preview--cb68a18b-432e-4e56-81ee-a3fb90b17c57.lovable.app/__l5e/assets-v1/54765de3-7904-435f-9f9c-ee464a0096fe/ideneumo-logo.png" />
+<link rel="apple-touch-icon" href="https://id-preview--cb68a18b-432e-4e56-81ee-a3fb90b17c57.lovable.app/__l5e/assets-v1/54765de3-7904-435f-9f9c-ee464a0096fe/ideneumo-logo.png" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Satoshi','Inter','ui-sans-serif','system-ui','sans-serif'],
+        display: ['Satoshi','Space Grotesk','ui-sans-serif','system-ui','sans-serif'],
+        mono: ['ui-monospace','SFMono-Regular','Menlo','Monaco','Consolas','monospace'],
+      },
+      animation: {
+        'spin-slow': 'spin 28s linear infinite',
+        'float': 'float 9s ease-in-out infinite',
+        'marquee': 'marquee 40s linear infinite',
+        'rise': 'rise .9s cubic-bezier(.2,.7,.2,1) both',
+      },
+      keyframes: {
+        float: { '0%,100%': { transform:'translateY(0)' }, '50%': { transform:'translateY(-12px)' } },
+        marquee: { from: { transform:'translateX(0)' }, to: { transform:'translateX(-50%)' } },
+        rise: { from:{opacity:'0',transform:'translateY(24px)'}, to:{opacity:'1',transform:'translateY(0)'} },
+      }
+    }
+  }
+};
+</script>
+<link rel="stylesheet" href="assets/styles.css" />
+
+</head>
+<body class="min-h-screen bg-white">
+<div id="site-header"></div>
+<main>
+
+<section id="top" class="relative -mt-2 pt-0 pb-16 md:-mt-3 md:pb-24 overflow-hidden">
+  <div class="absolute inset-0 -z-10 bg-grad-soft"></div>
+  <div aria-hidden class="absolute inset-0 -z-10 opacity-[0.05]"
+    style="background-image:radial-gradient(circle at 1px 1px,#111318 1px,transparent 0);background-size:28px 28px;-webkit-mask-image:radial-gradient(ellipse at 30% 30%,black 30%,transparent 75%);mask-image:radial-gradient(ellipse at 30% 30%,black 30%,transparent 75%);"></div>
+  <div class="container-x">
+    <div class="grid min-h-[calc(100vh-96px)] lg:min-h-[calc(100vh-104px)] lg:grid-cols-[1.05fr_1fr] gap-8 lg:gap-12 items-center py-4 md:py-6">
+      <div class="relative z-10">
+        <div class="eyebrow">
+          <span class="h-1.5 w-1.5 rounded-full bg-[color:var(--color-tangerine)]"></span>
+          CIAM · Built for Customer Trust
+        </div>
+        <h1 class="mt-4 font-display font-black uppercase text-[42px] sm:text-[64px] md:text-[82px] lg:text-[96px] leading-[0.92] tracking-[-0.045em] text-[color:var(--color-ink)]">
+          Identity,<br>
+          <span class="text-gradient-brand">Engineered</span><br>
+          For Trust.
+        </h1>
+        <p class="mt-6 max-w-xl text-lg md:text-xl text-[color:var(--color-charcoal)] leading-[1.55]">
+          Protect the journey. Trust the ride. Customer identity security built with the precision, protection and confidence of a championship helmet — for every portal.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+          <a href="contact.html" class="btn-primary">Book a Demo <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+          <a href="platform.html" class="btn-ghost text-[color:var(--color-tangerine)]">See Platform <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+        </div>
+        <div class="mt-10 flex flex-wrap gap-x-8 gap-y-4 text-sm">
+      <div class="flex items-center gap-2.5 text-[color:var(--color-charcoal)]">
+        <span class="grid h-7 w-7 place-items-center rounded-full border border-[color:var(--color-border)] bg-white">
+          <i data-lucide="shield-check" class="h-3.5 w-3.5 text-[color:var(--color-tangerine)]"></i>
+        </span>Built for enterprise security
+      </div>
+      <div class="flex items-center gap-2.5 text-[color:var(--color-charcoal)]">
+        <span class="grid h-7 w-7 place-items-center rounded-full border border-[color:var(--color-border)] bg-white">
+          <i data-lucide="lock" class="h-3.5 w-3.5 text-[color:var(--color-tangerine)]"></i>
+        </span>Privacy by design & by default
+      </div>
+      <div class="flex items-center gap-2.5 text-[color:var(--color-charcoal)]">
+        <span class="grid h-7 w-7 place-items-center rounded-full border border-[color:var(--color-border)] bg-white">
+          <i data-lucide="globe-2" class="h-3.5 w-3.5 text-[color:var(--color-tangerine)]"></i>
+        </span>UK based · Global standards
+      </div></div>
+      </div>
+
+      <div class="relative w-full">
+        <div class="absolute inset-0 -right-[15%] top-[10%] -z-0 opacity-90"><svg viewBox="0 0 900 600" preserveAspectRatio="none" class="w-full h-full" aria-hidden>
+<defs><clipPath id="sweepClipH"><path d="M-50 280 Q 250 80 600 220 T 1000 240 L 1000 360 Q 600 220 250 360 T -50 420 Z"/></clipPath></defs>
+<g clip-path="url(#sweepClipH)">
+<path d="M-50 280 Q 250 80 600 220 T 1000 240 L 1000 270 Q 600 110 250 250 T -50 320 Z" fill="#FF6A00"/>
+<path d="M-50 320 Q 250 140 600 250 T 1000 270 L 1000 300 Q 600 160 250 290 T -50 360 Z" fill="#FF4D4D"/>
+<path d="M-50 360 Q 250 200 600 290 T 1000 310 L 1000 340 Q 600 220 250 330 T -50 400 Z" fill="#E31E3A"/>
+<path d="M-50 400 Q 250 260 600 330 T 1000 350 L 1000 380 Q 600 290 250 370 T -50 430 Z" fill="#6B0F2E"/>
+</g></svg></div>
+
+        <div class="absolute top-2 -left-2 z-20 rounded-2xl bg-white shadow-pop border border-[color:var(--color-border)] px-4 py-3 flex items-center gap-3">
+          <div class="h-9 w-9 rounded-full bg-[color:var(--color-peach)] grid place-items-center">
+            <i data-lucide="star" class="h-4 w-4 text-[color:var(--color-cherry)]"></i>
+          </div>
+          <div class="leading-tight">
+            <div class="font-display text-sm font-black">SOC 2 · ISO 27001</div>
+            <div class="text-[10px] text-[color:var(--color-charcoal)]">Audited & certified</div>
+          </div>
+        </div>
+
+        <div class="absolute top-32 -right-2 z-20 rounded-2xl bg-[color:var(--color-ink)] text-white shadow-pop px-4 py-3 flex items-center gap-3">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping"></span>
+            <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400"></span>
+          </span>
+          <div class="leading-tight">
+            <div class="font-display text-sm font-black">99.99% uptime</div>
+            <div class="text-[10px] text-white/60">Last 12 months</div>
+          </div>
+        </div>
+
+        <div class="relative z-10 flex flex-col items-center gap-6">
+          <div class="relative w-full max-w-[480px]">
+            <img src="https://id-preview--cb68a18b-432e-4e56-81ee-a3fb90b17c57.lovable.app/__l5e/assets-v1/0c0ded86-31d0-4da2-8b91-cbae45a26686/hero-helmet.webp" alt="Championship racing helmet — Ideneumo brand" class="w-full h-auto animate-float drop-helmet" />
+          </div>
+          <div class="w-full max-w-[440px] rounded-2xl bg-white border border-[color:var(--color-border)] shadow-card overflow-hidden">
+            <div class="px-4 py-3 border-b border-[color:var(--color-border)] flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <div class="h-2 w-2 rounded-full" style="background:#ff6a00"></div>
+                <div class="h-2 w-2 rounded-full" style="background:#ff4d4d"></div>
+                <div class="h-2 w-2 rounded-full" style="background:#e31e3a"></div>
+              </div>
+              <div class="text-[10px] font-mono uppercase tracking-wider text-[color:var(--color-charcoal)]">Ideneumo Aegis — Live</div>
+            </div>
+            <div class="p-4 grid grid-cols-3 gap-3">
+      <div class="rounded-xl bg-[color:var(--color-cream)] p-3">
+        <div class="text-[10px] font-medium uppercase tracking-wider text-[color:var(--color-charcoal)]">Active users</div>
+        <div class="mt-1 font-display text-lg font-black text-[color:var(--color-tangerine)]">24.8K</div>
+      </div>
+      <div class="rounded-xl bg-[color:var(--color-cream)] p-3">
+        <div class="text-[10px] font-medium uppercase tracking-wider text-[color:var(--color-charcoal)]">Auth success</div>
+        <div class="mt-1 font-display text-lg font-black text-emerald-600">99.97%</div>
+      </div>
+      <div class="rounded-xl bg-[color:var(--color-cream)] p-3">
+        <div class="text-[10px] font-medium uppercase tracking-wider text-[color:var(--color-charcoal)]">Threats blocked</div>
+        <div class="mt-1 font-display text-lg font-black text-[color:var(--color-cherry)]">1,204</div>
+      </div></div>
+            <div class="px-4 pb-4 space-y-2">
+      <div class="flex items-center gap-3 rounded-xl border border-[color:var(--color-border)] bg-white px-3 py-2.5">
+        <i data-lucide="users" class="h-4 w-4 text-[color:var(--color-tangerine)] shrink-0"></i>
+        <div class="flex-1 min-w-0">
+          <div class="text-xs font-semibold truncate">New registration · UK Retail</div>
+          <div class="text-[10px] text-[color:var(--color-charcoal)]">Passkey verified</div>
+        </div>
+        <i data-lucide="check-circle-2" class="h-3.5 w-3.5 text-emerald-500 shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-3 rounded-xl border border-[color:var(--color-border)] bg-white px-3 py-2.5">
+        <i data-lucide="activity" class="h-4 w-4 text-[color:var(--color-tangerine)] shrink-0"></i>
+        <div class="flex-1 min-w-0">
+          <div class="text-xs font-semibold truncate">Risk-based step-up · DE Bank</div>
+          <div class="text-[10px] text-[color:var(--color-charcoal)]">MFA required</div>
+        </div>
+        <i data-lucide="check-circle-2" class="h-3.5 w-3.5 text-emerald-500 shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-3 rounded-xl border border-[color:var(--color-border)] bg-white px-3 py-2.5">
+        <i data-lucide="check-circle-2" class="h-4 w-4 text-[color:var(--color-tangerine)] shrink-0"></i>
+        <div class="flex-1 min-w-0">
+          <div class="text-xs font-semibold truncate">SSO session · Global SaaS</div>
+          <div class="text-[10px] text-[color:var(--color-charcoal)]">Trusted device</div>
+        </div>
+        <i data-lucide="check-circle-2" class="h-3.5 w-3.5 text-emerald-500 shrink-0"></i>
+      </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[color:var(--color-ink)] text-white py-6 border-y border-white/10 overflow-hidden">
+  <div class="flex gap-10 whitespace-nowrap animate-marquee">
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Identity, engineered</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Built like a helmet</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>UK · Global standards</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Passkeys by default</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Fraud out · Customers in</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>SOC 2 · ISO 27001 · GDPR</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Adaptive · Not annoying</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Identity, engineered</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Built like a helmet</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>UK · Global standards</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Passkeys by default</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Fraud out · Customers in</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>SOC 2 · ISO 27001 · GDPR</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Adaptive · Not annoying</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Identity, engineered</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Built like a helmet</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>UK · Global standards</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Passkeys by default</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Fraud out · Customers in</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>SOC 2 · ISO 27001 · GDPR</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div>
+      <div class="flex items-center gap-10 font-display uppercase font-black text-2xl md:text-4xl tracking-[-0.02em]">
+        <span>Adaptive · Not annoying</span><i data-lucide="asterisk" class="h-6 w-6 text-[color:var(--color-tangerine)] shrink-0"></i>
+      </div></div>
+</section>
+
+<section id="journey" class="relative py-24 md:py-32 bg-[color:var(--color-warm)] overflow-hidden">
+  <div aria-hidden class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 opacity-30"
+    style="background-image:repeating-linear-gradient(90deg,#111318 0 18px,transparent 18px 36px);"></div>
+  <div class="container-x relative">
+    <div class="max-w-2xl">
+      <div class="eyebrow">The Customer Identity Journey</div>
+      <h2 class="mt-4 font-display font-black text-4xl md:text-6xl leading-[1] tracking-[-0.035em]">
+        One track.<br><span class="text-gradient-brand">Every checkpoint protected.</span>
+      </h2>
+      <p class="mt-5 text-lg text-[color:var(--color-charcoal)] max-w-xl">
+        From the first visit to the thousandth login — Ideneumo guards every corner of the identity track.
+      </p>
+    </div>
+    <div class="relative mt-20">
+      <div aria-hidden class="absolute left-0 right-0 top-12 h-3 rounded-full"
+        style="background:linear-gradient(90deg,#FF6A00 0 25%,#FF4D4D 25% 50%,#E31E3A 50% 75%,#6B0F2E 75% 100%);"></div>
+      <div aria-hidden class="absolute left-0 right-0 top-[3.4rem] h-px opacity-50"
+        style="background-image:repeating-linear-gradient(90deg,#fff 0 8px,transparent 8px 16px);"></div>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 relative">
+      <div class="relative">
+        <div class="mx-auto h-[88px] w-[88px] rounded-full bg-white grid place-items-center border-4 border-white shadow-card relative z-10">
+          <div class="h-full w-full rounded-full bg-[color:var(--color-cream)] grid place-items-center border border-[color:var(--color-border)]">
+            <i data-lucide="user" class="h-7 w-7 text-[color:var(--color-tangerine)]"></i>
+          </div>
+        </div>
+        <div class="mt-5 text-center">
+          <div class="font-mono text-[10px] tracking-[0.3em] text-[color:var(--color-tangerine)]">STAGE 01</div>
+          <div class="mt-1 font-display font-bold text-lg">User</div>
+          <div class="mt-1 text-sm text-[color:var(--color-charcoal)]">Every identity begins as a stranger.</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="mx-auto h-[88px] w-[88px] rounded-full bg-white grid place-items-center border-4 border-white shadow-card relative z-10">
+          <div class="h-full w-full rounded-full bg-[color:var(--color-cream)] grid place-items-center border border-[color:var(--color-border)]">
+            <i data-lucide="user-plus" class="h-7 w-7 text-[color:var(--color-tangerine)]"></i>
+          </div>
+        </div>
+        <div class="mt-5 text-center">
+          <div class="font-mono text-[10px] tracking-[0.3em] text-[color:var(--color-tangerine)]">STAGE 02</div>
+          <div class="mt-1 font-display font-bold text-lg">Sign-up</div>
+          <div class="mt-1 text-sm text-[color:var(--color-charcoal)]">Smart, flexible registration flows.</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="mx-auto h-[88px] w-[88px] rounded-full bg-white grid place-items-center border-4 border-white shadow-card relative z-10">
+          <div class="h-full w-full rounded-full bg-[color:var(--color-cream)] grid place-items-center border border-[color:var(--color-border)]">
+            <i data-lucide="fingerprint" class="h-7 w-7 text-[color:var(--color-tangerine)]"></i>
+          </div>
+        </div>
+        <div class="mt-5 text-center">
+          <div class="font-mono text-[10px] tracking-[0.3em] text-[color:var(--color-tangerine)]">STAGE 03</div>
+          <div class="mt-1 font-display font-bold text-lg">Verification</div>
+          <div class="mt-1 text-sm text-[color:var(--color-charcoal)]">Document, biometric & data checks.</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="mx-auto h-[88px] w-[88px] rounded-full bg-white grid place-items-center border-4 border-white shadow-card relative z-10">
+          <div class="h-full w-full rounded-full bg-[color:var(--color-cream)] grid place-items-center border border-[color:var(--color-border)]">
+            <i data-lucide="shield-check" class="h-7 w-7 text-[color:var(--color-tangerine)]"></i>
+          </div>
+        </div>
+        <div class="mt-5 text-center">
+          <div class="font-mono text-[10px] tracking-[0.3em] text-[color:var(--color-tangerine)]">STAGE 04</div>
+          <div class="mt-1 font-display font-bold text-lg">Authentication</div>
+          <div class="mt-1 text-sm text-[color:var(--color-charcoal)]">Adaptive MFA, passkeys, SSO.</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="mx-auto h-[88px] w-[88px] rounded-full bg-white grid place-items-center border-4 border-white shadow-card relative z-10">
+          <div class="h-full w-full rounded-full bg-[color:var(--color-cream)] grid place-items-center border border-[color:var(--color-border)]">
+            <i data-lucide="key-round" class="h-7 w-7 text-[color:var(--color-tangerine)]"></i>
+          </div>
+        </div>
+        <div class="mt-5 text-center">
+          <div class="font-mono text-[10px] tracking-[0.3em] text-[color:var(--color-tangerine)]">STAGE 05</div>
+          <div class="mt-1 font-display font-bold text-lg">Secure Access</div>
+          <div class="mt-1 text-sm text-[color:var(--color-charcoal)]">Trusted, frictionless every time.</div>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="relative py-24 md:py-32 bg-white overflow-hidden" id="helmet-anatomy">
+  <div class="absolute top-10 right-6 md:right-12 font-mono text-[10px] tracking-[0.35em] text-[color:var(--color-ink)]/40 rotate-90 origin-top-right hidden md:block">
+    IDENEUMO · ANATOMY · 06 LAYERS · UK
+  </div>
+  <div class="container-x">
+    <div class="max-w-3xl">
+      <div class="eyebrow">The Anatomy · Interactive</div>
+      <h2 class="mt-4 font-display font-black text-4xl md:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.04em] uppercase">
+        Six engineered layers.<br>
+        <span class="text-gradient-brand">One protected rider.</span>
+      </h2>
+      <p class="mt-6 text-lg text-[color:var(--color-charcoal)] max-w-xl leading-relaxed">
+        Hover any component of the helmet — see exactly which part of your customer identity stack it protects.
+      </p>
+    </div>
+    <div class="mt-16 grid lg:grid-cols-[1fr_1.05fr] gap-10 lg:gap-16 items-center">
+      <div class="relative aspect-square w-full max-w-[560px] mx-auto">
+        <svg viewBox="0 0 400 400" class="absolute inset-0 w-full h-full pointer-events-none" aria-hidden>
+          <g fill="none" stroke="#FF6A00" stroke-width="1" opacity="0.18">
+            <circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="110"/>
+            <circle cx="200" cy="200" r="160"/><circle cx="200" cy="200" r="195"/>
+          </g>
+          <line x1="0" y1="200" x2="400" y2="200" stroke="#111318" stroke-width="0.5" stroke-dasharray="2 6" opacity="0.2"/>
+          <line x1="200" y1="0" x2="200" y2="400" stroke="#111318" stroke-width="0.5" stroke-dasharray="2 6" opacity="0.2"/>
+        </svg>
+        <div class="absolute inset-[8%] grid place-items-center">
+          <img src="https://id-preview--cb68a18b-432e-4e56-81ee-a3fb90b17c57.lovable.app/__l5e/assets-v1/0c0ded86-31d0-4da2-8b91-cbae45a26686/hero-helmet.webp" alt="Ideneumo helmet" class="w-full h-full object-contain drop-helmet-strong" draggable="false" />
+        </div>
+        <svg viewBox="0 0 400 400" class="absolute inset-0 w-full h-full" aria-hidden>
+      <g class="hot" data-id="shell" style="cursor:pointer;">
+        <circle class="pulse" cx="200.0" cy="88.0" r="22" fill="#FF6A00" opacity="0.22" style="display:none;">
+          <animate attributeName="r" values="14;28;14" dur="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.28;0.05;0.28" dur="2.4s" repeatCount="indefinite"/>
+        </circle>
+        <circle class="dot" cx="200.0" cy="88.0" r="7" fill="#fff" stroke="#111318" stroke-width="2"/>
+        <text class="lbl" x="200.0" y="91.0" text-anchor="middle" font-size="9" font-weight="900" fill="#111318" style="pointer-events:none;">01</text>
+      </g>
+      <g class="hot" data-id="liner" style="cursor:pointer;">
+        <circle class="pulse" cx="200.0" cy="152.0" r="22" fill="#FF6A00" opacity="0.22" style="display:none;">
+          <animate attributeName="r" values="14;28;14" dur="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.28;0.05;0.28" dur="2.4s" repeatCount="indefinite"/>
+        </circle>
+        <circle class="dot" cx="200.0" cy="152.0" r="7" fill="#fff" stroke="#111318" stroke-width="2"/>
+        <text class="lbl" x="200.0" y="155.0" text-anchor="middle" font-size="9" font-weight="900" fill="#111318" style="pointer-events:none;">02</text>
+      </g>
+      <g class="hot" data-id="vents" style="cursor:pointer;">
+        <circle class="pulse" cx="120.0" cy="180.0" r="22" fill="#FF6A00" opacity="0.22" style="display:none;">
+          <animate attributeName="r" values="14;28;14" dur="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.28;0.05;0.28" dur="2.4s" repeatCount="indefinite"/>
+        </circle>
+        <circle class="dot" cx="120.0" cy="180.0" r="7" fill="#fff" stroke="#111318" stroke-width="2"/>
+        <text class="lbl" x="120.0" y="183.0" text-anchor="middle" font-size="9" font-weight="900" fill="#111318" style="pointer-events:none;">03</text>
+      </g>
+      <g class="hot" data-id="visor" style="cursor:pointer;">
+        <circle class="pulse" cx="280.0" cy="200.0" r="22" fill="#FF6A00" opacity="0.22" style="display:none;">
+          <animate attributeName="r" values="14;28;14" dur="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.28;0.05;0.28" dur="2.4s" repeatCount="indefinite"/>
+        </circle>
+        <circle class="dot" cx="280.0" cy="200.0" r="7" fill="#fff" stroke="#111318" stroke-width="2"/>
+        <text class="lbl" x="280.0" y="203.0" text-anchor="middle" font-size="9" font-weight="900" fill="#111318" style="pointer-events:none;">04</text>
+      </g>
+      <g class="hot" data-id="strap" style="cursor:pointer;">
+        <circle class="pulse" cx="200.0" cy="312.0" r="22" fill="#FF6A00" opacity="0.22" style="display:none;">
+          <animate attributeName="r" values="14;28;14" dur="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.28;0.05;0.28" dur="2.4s" repeatCount="indefinite"/>
+        </circle>
+        <circle class="dot" cx="200.0" cy="312.0" r="7" fill="#fff" stroke="#111318" stroke-width="2"/>
+        <text class="lbl" x="200.0" y="315.0" text-anchor="middle" font-size="9" font-weight="900" fill="#111318" style="pointer-events:none;">05</text>
+      </g>
+      <g class="hot" data-id="telem" style="cursor:pointer;">
+        <circle class="pulse" cx="320.0" cy="112.00000000000001" r="22" fill="#FF6A00" opacity="0.22" style="display:none;">
+          <animate attributeName="r" values="14;28;14" dur="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.28;0.05;0.28" dur="2.4s" repeatCount="indefinite"/>
+        </circle>
+        <circle class="dot" cx="320.0" cy="112.00000000000001" r="7" fill="#fff" stroke="#111318" stroke-width="2"/>
+        <text class="lbl" x="320.0" y="115.00000000000001" text-anchor="middle" font-size="9" font-weight="900" fill="#111318" style="pointer-events:none;">06</text>
+      </g></svg>
+      </div>
+      <div>
+        <div class="rounded-3xl bg-[color:var(--color-cream)] border border-[color:var(--color-border)] p-8 md:p-10 relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 h-48 w-48 rounded-full" style="background:radial-gradient(closest-side,#FFD9C2,transparent 70%);"></div>
+          <div class="relative">
+            <div class="flex items-center gap-3">
+              <div class="h-12 w-12 rounded-2xl bg-white grid place-items-center shadow-card">
+                <span id="anatomy-icon" class="text-[color:var(--color-cherry)]"><i data-lucide="shield-check" class="h-6 w-6"></i></span>
+              </div>
+              <div>
+                <div id="anatomy-kicker" class="font-mono text-[10px] tracking-[0.3em] text-[color:var(--color-tangerine)]">LAYER 01 · EDGE PROTECTION</div>
+                <h3 id="anatomy-title" class="font-display text-2xl font-bold">Outer Shell</h3>
+              </div>
+            </div>
+            <p id="anatomy-desc" class="mt-6 text-[color:var(--color-charcoal)] leading-relaxed text-[15px]"></p>
+          </div>
+        </div>
+        <div class="mt-5 grid grid-cols-2 sm:grid-cols-3 gap-2">
+      <button class="chip text-left p-3 rounded-xl border border-[color:var(--color-border)] bg-white/60 transition-all" data-id="shell">
+        <div class="font-mono text-[9px] tracking-[0.25em] text-[color:var(--color-tangerine)]">01</div>
+        <div class="mt-0.5 text-sm font-bold">Outer Shell</div>
+        <div class="text-[11px] text-[color:var(--color-muted-foreground)]">Edge protection</div>
+      </button>
+      <button class="chip text-left p-3 rounded-xl border border-[color:var(--color-border)] bg-white/60 transition-all" data-id="liner">
+        <div class="font-mono text-[9px] tracking-[0.25em] text-[color:var(--color-tangerine)]">02</div>
+        <div class="mt-0.5 text-sm font-bold">Inner Liner</div>
+        <div class="text-[11px] text-[color:var(--color-muted-foreground)]">Adaptive policy</div>
+      </button>
+      <button class="chip text-left p-3 rounded-xl border border-[color:var(--color-border)] bg-white/60 transition-all" data-id="vents">
+        <div class="font-mono text-[9px] tracking-[0.25em] text-[color:var(--color-tangerine)]">03</div>
+        <div class="mt-0.5 text-sm font-bold">Ventilation</div>
+        <div class="text-[11px] text-[color:var(--color-muted-foreground)]">Flow & speed</div>
+      </button>
+      <button class="chip text-left p-3 rounded-xl border border-[color:var(--color-border)] bg-white/60 transition-all" data-id="visor">
+        <div class="font-mono text-[9px] tracking-[0.25em] text-[color:var(--color-tangerine)]">04</div>
+        <div class="mt-0.5 text-sm font-bold">Optical Visor</div>
+        <div class="text-[11px] text-[color:var(--color-muted-foreground)]">Identity verification</div>
+      </button>
+      <button class="chip text-left p-3 rounded-xl border border-[color:var(--color-border)] bg-white/60 transition-all" data-id="strap">
+        <div class="font-mono text-[9px] tracking-[0.25em] text-[color:var(--color-tangerine)]">05</div>
+        <div class="mt-0.5 text-sm font-bold">Retention Strap</div>
+        <div class="text-[11px] text-[color:var(--color-muted-foreground)]">Session integrity</div>
+      </button>
+      <button class="chip text-left p-3 rounded-xl border border-[color:var(--color-border)] bg-white/60 transition-all" data-id="telem">
+        <div class="font-mono text-[9px] tracking-[0.25em] text-[color:var(--color-tangerine)]">06</div>
+        <div class="mt-0.5 text-sm font-bold">Telemetry</div>
+        <div class="text-[11px] text-[color:var(--color-muted-foreground)]">Signals & audit</div>
+      </button></div>
+      </div>
+    </div>
+  </div>
+  <script>window.__ANATOMY_LAYERS = [{"id": "shell", "k": "01", "icon": "shield-check", "t": "Outer Shell", "sec": "Edge protection", "d": "Carbon-grade composite that deflects impact. In CIAM: bot defence, WAF rules, and rate-limited endpoints that absorb attack traffic before it ever reaches your customer.", "cx": 50, "cy": 22}, {"id": "liner", "k": "02", "icon": "layers", "t": "Inner Liner", "sec": "Adaptive policy", "d": "Multi-density foam absorbs energy. In CIAM: layered, risk-aware policies that step up only when signals demand \u2014 friction where it earns trust, none where it costs revenue.", "cx": 50, "cy": 38}, {"id": "vents", "k": "03", "icon": "wind", "t": "Ventilation", "sec": "Flow & speed", "d": "Channelled airflow keeps the rider sharp. In CIAM: passkeys, SSO, prebuilt journeys \u2014 customers move fast because the system breathes.", "cx": 30, "cy": 45}, {"id": "visor", "k": "04", "icon": "eye", "t": "Optical Visor", "sec": "Identity verification", "d": "Distortion-free field of view. In CIAM: document, biometric and data verification that sees who's really there \u2014 without distorting the experience.", "cx": 70, "cy": 50}, {"id": "strap", "k": "05", "icon": "lock", "t": "Retention Strap", "sec": "Session integrity", "d": "Locked under load, releases on demand. In CIAM: token rotation, device binding, revocation \u2014 sessions that hold through the race and end clean.", "cx": 50, "cy": 78}, {"id": "telem", "k": "06", "icon": "radio", "t": "Telemetry", "sec": "Signals & audit", "d": "Live data off the bike. In CIAM: real-time risk signals, audit trails, and dashboards your security team will actually open.", "cx": 80, "cy": 28}];</script>
+</section>
+
+<section id="platform" class="py-24 md:py-32">
+  <div class="container-x">
+    <div class="text-center max-w-2xl mx-auto">
+      <div class="eyebrow justify-center">Platform Capabilities</div>
+      <h2 class="mt-4 font-display font-black text-4xl md:text-6xl leading-[1] tracking-[-0.035em]">
+        Everything you need to deliver<span class="text-gradient-brand"> trusted experiences.</span>
+      </h2>
+    </div>
+    <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius">
+        <div class="h-12 w-12 rounded-2xl bg-[color:var(--color-peach)] grid place-items-center mb-6">
+          <i data-lucide="user-plus" class="h-6 w-6 text-[color:var(--color-cherry)]"></i>
+        </div>
+        <h3 class="font-display text-xl font-bold">Secure sign-up</h3>
+        <p class="mt-2 text-[color:var(--color-charcoal)] leading-relaxed">Flexible registration flows with verification that keeps fraud out and users moving.</p>
+        <a href="platform.html" class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[color:var(--color-tangerine)]">Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i></a>
+      </div>
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius-r">
+        <div class="h-12 w-12 rounded-2xl bg-[color:var(--color-peach)] grid place-items-center mb-6">
+          <i data-lucide="log-in" class="h-6 w-6 text-[color:var(--color-cherry)]"></i>
+        </div>
+        <h3 class="font-display text-xl font-bold">Trusted login</h3>
+        <p class="mt-2 text-[color:var(--color-charcoal)] leading-relaxed">Strong, frictionless authentication across every device and customer portal.</p>
+        <a href="platform.html" class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[color:var(--color-tangerine)]">Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i></a>
+      </div>
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius">
+        <div class="h-12 w-12 rounded-2xl bg-[color:var(--color-peach)] grid place-items-center mb-6">
+          <i data-lucide="fingerprint" class="h-6 w-6 text-[color:var(--color-cherry)]"></i>
+        </div>
+        <h3 class="font-display text-xl font-bold">Adaptive authentication</h3>
+        <p class="mt-2 text-[color:var(--color-charcoal)] leading-relaxed">Risk-based step-up that responds in real time — without adding friction.</p>
+        <a href="platform.html" class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[color:var(--color-tangerine)]">Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i></a>
+      </div>
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius-r">
+        <div class="h-12 w-12 rounded-2xl bg-[color:var(--color-peach)] grid place-items-center mb-6">
+          <i data-lucide="plug" class="h-6 w-6 text-[color:var(--color-cherry)]"></i>
+        </div>
+        <h3 class="font-display text-xl font-bold">Portal-ready integration</h3>
+        <p class="mt-2 text-[color:var(--color-charcoal)] leading-relaxed">Pre-built connectors and APIs to launch securely, faster.</p>
+        <a href="platform.html" class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[color:var(--color-tangerine)]">Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i></a>
+      </div>
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius">
+        <div class="h-12 w-12 rounded-2xl bg-[color:var(--color-peach)] grid place-items-center mb-6">
+          <i data-lucide="bar-chart-3" class="h-6 w-6 text-[color:var(--color-cherry)]"></i>
+        </div>
+        <h3 class="font-display text-xl font-bold">Analytics & audit</h3>
+        <p class="mt-2 text-[color:var(--color-charcoal)] leading-relaxed">Dashboards, audit trails, and reporting your security team will actually use.</p>
+        <a href="platform.html" class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[color:var(--color-tangerine)]">Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i></a>
+      </div>
+      <div class="relative bg-white border border-[color:var(--color-border)] p-7 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-card visor-radius-r">
+        <div class="h-12 w-12 rounded-2xl bg-[color:var(--color-peach)] grid place-items-center mb-6">
+          <i data-lucide="users" class="h-6 w-6 text-[color:var(--color-cherry)]"></i>
+        </div>
+        <h3 class="font-display text-xl font-bold">Consent & profile</h3>
+        <p class="mt-2 text-[color:var(--color-charcoal)] leading-relaxed">Give users control of their data with consent management and profile preferences.</p>
+        <a href="platform.html" class="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[color:var(--color-tangerine)]">Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5"></i></a>
+      </div></div>
+  </div>
+</section>
+
+<section id="why" class="relative py-24 md:py-32 bg-[color:var(--color-ink)] text-white overflow-hidden">
+  <div class="absolute -right-32 -top-20 w-[600px] h-[600px] opacity-25 pointer-events-none"><svg viewBox="0 0 400 400" style="width:100%;height:100%;" aria-hidden><g fill="none" stroke="#FF6A00" stroke-width="2" stroke-linecap="round" opacity="0.55"><path d="M 160 230 a 40 36.80 0 0 1 80 0" opacity="1.00"/><path d="M 142 230 a 58 53.36 0 0 1 116 0" opacity="0.93"/><path d="M 124 230 a 76 69.92 0 0 1 152 0" opacity="0.86"/><path d="M 106 230 a 94 86.48 0 0 1 188 0" opacity="0.79"/><path d="M 88 230 a 112 103.04 0 0 1 224 0" opacity="0.72"/><path d="M 70 230 a 130 119.60 0 0 1 260 0" opacity="0.65"/><path d="M 52 230 a 148 136.16 0 0 1 296 0" opacity="0.58"/><path d="M 34 230 a 166 152.72 0 0 1 332 0" opacity="0.51"/><path d="M 16 230 a 184 169.28 0 0 1 368 0" opacity="0.44"/><path d="M -2 230 a 202 185.84 0 0 1 404 0" opacity="0.37"/></g></svg></div>
+  <div class="container-x relative">
+    <div class="grid md:grid-cols-[1fr_1.2fr] gap-16 items-start">
+      <div>
+        <div class="eyebrow" style="color:var(--color-tangerine) !important;">Why Helmet Thinking</div>
+        <h2 class="mt-4 font-display font-black text-4xl md:text-6xl leading-[1] tracking-[-0.035em]">
+          Security<br>you can<br><span class="text-gradient-brand">feel.</span>
+        </h2>
+        <p class="mt-6 text-white/70 text-lg max-w-md">
+          Every great helmet is the sum of engineered layers. So is great identity security. We design protection your customers trust and your engineers respect.
+        </p>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5">
+      <div class="rounded-2xl bg-white/[0.04] border border-white/10 p-6 backdrop-blur hover:bg-white/[0.07] transition-colors">
+        <div class="h-10 w-10 rounded-xl grid place-items-center" style="background:linear-gradient(135deg,#FF7A1A,#E31E3A);"><i data-lucide="shield" class="h-5 w-5 text-white"></i></div>
+        <h3 class="mt-5 font-display text-lg font-bold">Outer shell · Protection</h3>
+        <p class="mt-2 text-sm text-white/65 leading-relaxed">Like a helmet's outer shell, our edge resists attacks — phishing, ATO, bot fraud, abuse.</p>
+      </div>
+      <div class="rounded-2xl bg-white/[0.04] border border-white/10 p-6 backdrop-blur hover:bg-white/[0.07] transition-colors">
+        <div class="h-10 w-10 rounded-xl grid place-items-center" style="background:linear-gradient(135deg,#FF7A1A,#E31E3A);"><i data-lucide="layers" class="h-5 w-5 text-white"></i></div>
+        <h3 class="mt-5 font-display text-lg font-bold">Inner liner · Adaptation</h3>
+        <p class="mt-2 text-sm text-white/65 leading-relaxed">Adaptive policy layers cushion every login, stepping up only when risk demands it.</p>
+      </div>
+      <div class="rounded-2xl bg-white/[0.04] border border-white/10 p-6 backdrop-blur hover:bg-white/[0.07] transition-colors">
+        <div class="h-10 w-10 rounded-xl grid place-items-center" style="background:linear-gradient(135deg,#FF7A1A,#E31E3A);"><i data-lucide="zap" class="h-5 w-5 text-white"></i></div>
+        <h3 class="mt-5 font-display text-lg font-bold">Ventilation · Speed</h3>
+        <p class="mt-2 text-sm text-white/65 leading-relaxed">Engineered for flow — passkeys, SSO and pre-built journeys keep customers moving.</p>
+      </div>
+      <div class="rounded-2xl bg-white/[0.04] border border-white/10 p-6 backdrop-blur hover:bg-white/[0.07] transition-colors">
+        <div class="h-10 w-10 rounded-xl grid place-items-center" style="background:linear-gradient(135deg,#FF7A1A,#E31E3A);"><i data-lucide="award" class="h-5 w-5 text-white"></i></div>
+        <h3 class="mt-5 font-display text-lg font-bold">Certification · Trust</h3>
+        <p class="mt-2 text-sm text-white/65 leading-relaxed">SOC 2, ISO 27001, GDPR. Built to the same standards as motorsport-grade safety gear.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="trust" class="py-24 md:py-32 bg-[color:var(--color-cream)]">
+  <div class="container-x">
+    <div class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center">
+      <div>
+        <div class="eyebrow">Enterprise Trust</div>
+        <h2 class="mt-4 font-display font-black text-4xl md:text-5xl leading-[1.02] tracking-[-0.035em]">
+          The complete<br><span class="text-gradient-brand">protection system.</span>
+        </h2>
+        <p class="mt-5 text-[color:var(--color-charcoal)] text-lg max-w-md">
+          Each layer engineered like a helmet component — tested, certified, and ready for the highest-stakes journeys.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+      <div class="group relative bg-white border border-[color:var(--color-border)] rounded-2xl p-5 hover:border-[color:var(--color-tangerine)] hover:-translate-y-1 transition-all">
+        <div class="h-10 w-10 rounded-xl bg-[color:var(--color-peach)] grid place-items-center"><i data-lucide="shield-check" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <div class="mt-4 font-display font-bold text-base">SOC 2</div>
+        <div class="mt-0.5 text-xs text-[color:var(--color-muted-foreground)]">Type II ready</div>
+        <span class="absolute right-4 top-4 h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+      </div>
+      <div class="group relative bg-white border border-[color:var(--color-border)] rounded-2xl p-5 hover:border-[color:var(--color-tangerine)] hover:-translate-y-1 transition-all">
+        <div class="h-10 w-10 rounded-xl bg-[color:var(--color-peach)] grid place-items-center"><i data-lucide="file-check-2" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <div class="mt-4 font-display font-bold text-base">GDPR</div>
+        <div class="mt-0.5 text-xs text-[color:var(--color-muted-foreground)]">UK · EU compliant</div>
+        <span class="absolute right-4 top-4 h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+      </div>
+      <div class="group relative bg-white border border-[color:var(--color-border)] rounded-2xl p-5 hover:border-[color:var(--color-tangerine)] hover:-translate-y-1 transition-all">
+        <div class="h-10 w-10 rounded-xl bg-[color:var(--color-peach)] grid place-items-center"><i data-lucide="key-round" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <div class="mt-4 font-display font-bold text-base">MFA</div>
+        <div class="mt-0.5 text-xs text-[color:var(--color-muted-foreground)]">Adaptive · TOTP · SMS</div>
+        <span class="absolute right-4 top-4 h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+      </div>
+      <div class="group relative bg-white border border-[color:var(--color-border)] rounded-2xl p-5 hover:border-[color:var(--color-tangerine)] hover:-translate-y-1 transition-all">
+        <div class="h-10 w-10 rounded-xl bg-[color:var(--color-peach)] grid place-items-center"><i data-lucide="log-in" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <div class="mt-4 font-display font-bold text-base">SSO</div>
+        <div class="mt-0.5 text-xs text-[color:var(--color-muted-foreground)]">SAML · OIDC · SCIM</div>
+        <span class="absolute right-4 top-4 h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+      </div>
+      <div class="group relative bg-white border border-[color:var(--color-border)] rounded-2xl p-5 hover:border-[color:var(--color-tangerine)] hover:-translate-y-1 transition-all">
+        <div class="h-10 w-10 rounded-xl bg-[color:var(--color-peach)] grid place-items-center"><i data-lucide="fingerprint" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <div class="mt-4 font-display font-bold text-base">Passkeys</div>
+        <div class="mt-0.5 text-xs text-[color:var(--color-muted-foreground)]">FIDO2 · WebAuthn</div>
+        <span class="absolute right-4 top-4 h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+      </div>
+      <div class="group relative bg-white border border-[color:var(--color-border)] rounded-2xl p-5 hover:border-[color:var(--color-tangerine)] hover:-translate-y-1 transition-all">
+        <div class="h-10 w-10 rounded-xl bg-[color:var(--color-peach)] grid place-items-center"><i data-lucide="activity" class="h-5 w-5 text-[color:var(--color-cherry)]"></i></div>
+        <div class="mt-4 font-display font-bold text-base">Risk-based Auth</div>
+        <div class="mt-0.5 text-xs text-[color:var(--color-muted-foreground)]">Real-time signals</div>
+        <span class="absolute right-4 top-4 h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-24 md:py-32">
+  <div class="container-x">
+    <div class="relative overflow-hidden rounded-[36px] bg-[color:var(--color-ink)] p-10 md:p-16 text-white shadow-pop">
+      <div class="absolute -top-32 -right-24 h-[480px] w-[480px] opacity-40"><svg viewBox="0 0 400 400" style="width:100%;height:100%;" aria-hidden><g fill="none" stroke="#FF6A00" stroke-width="2" stroke-linecap="round" opacity="0.6"><path d="M 160 230 a 40 36.80 0 0 1 80 0" opacity="1.00"/><path d="M 142 230 a 58 53.36 0 0 1 116 0" opacity="0.93"/><path d="M 124 230 a 76 69.92 0 0 1 152 0" opacity="0.86"/><path d="M 106 230 a 94 86.48 0 0 1 188 0" opacity="0.79"/><path d="M 88 230 a 112 103.04 0 0 1 224 0" opacity="0.72"/><path d="M 70 230 a 130 119.60 0 0 1 260 0" opacity="0.65"/><path d="M 52 230 a 148 136.16 0 0 1 296 0" opacity="0.58"/><path d="M 34 230 a 166 152.72 0 0 1 332 0" opacity="0.51"/><path d="M 16 230 a 184 169.28 0 0 1 368 0" opacity="0.44"/><path d="M -2 230 a 202 185.84 0 0 1 404 0" opacity="0.37"/></g></svg></div>
+      <div class="absolute bottom-0 right-0 left-0 opacity-90"><svg viewBox="0 0 1440 240" preserveAspectRatio="none" style="display:block;width:100%;height:140px;" aria-hidden>
+<path d="M0 180 Q 360 60 720 140 T 1440 100 V240 H0 Z" fill="#FF6A00"/>
+<path d="M0 200 Q 360 90 720 170 T 1440 130 V240 H0 Z" fill="#FF4D4D"/>
+<path d="M0 220 Q 360 130 720 200 T 1440 160 V240 H0 Z" fill="#E31E3A"/>
+<path d="M0 235 Q 360 170 720 220 T 1440 190 V240 H0 Z" fill="#6B0F2E"/>
+</svg></div>
+      <div class="relative grid md:grid-cols-[1.4fr_1fr] gap-10 items-end">
+        <div>
+          <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur text-[10px] font-bold uppercase tracking-[0.3em]">
+            <span class="h-1.5 w-1.5 rounded-full bg-[color:var(--color-tangerine)] animate-pulse"></span>
+            Now booking · Q3 enterprise pilots
+          </span>
+          <h2 class="mt-6 font-display font-black uppercase text-4xl md:text-6xl lg:text-7xl tracking-[-0.04em] leading-[0.95]">
+            Ready to deliver<br><span class="text-gradient-brand">secure access</span><br>your customers will love?
+          </h2>
+          <p class="mt-6 max-w-xl text-lg text-white/70 leading-relaxed">
+            See how Ideneumo makes login simple, secure, and built for every portal.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="contact.html" class="btn-primary">Book a Demo <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+            <a href="platform.html" class="inline-flex items-center justify-center gap-2 h-[54px] px-6 rounded-[10px] border border-white/20 text-white font-semibold hover:bg-white/5 transition-colors" style="text-decoration:none;">
+              <i data-lucide="calendar" class="h-4 w-4"></i> See the platform
+            </a>
+          </div>
+        </div>
+        <div class="relative rounded-3xl bg-white/[0.04] backdrop-blur border border-white/10 p-6">
+          <div class="flex items-center justify-between text-[10px] font-mono uppercase tracking-[0.2em] text-white/50">
+            <span>session · london</span>
+            <span class="flex items-center gap-1.5"><span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span> live</span>
+          </div>
+          <div class="mt-5 space-y-3.5">
+      <div class="flex items-center justify-between border-b border-white/10 pb-3 last:border-0">
+        <div class="text-xs text-white/60 uppercase tracking-wider">Risk score</div>
+        <div class="text-right">
+          <div class="text-sm font-semibold">0.04</div>
+          <div class="text-[10px] font-mono text-[color:var(--color-tangerine)] uppercase tracking-wider">low</div>
+        </div>
+      </div>
+      <div class="flex items-center justify-between border-b border-white/10 pb-3 last:border-0">
+        <div class="text-xs text-white/60 uppercase tracking-wider">Auth factor</div>
+        <div class="text-right">
+          <div class="text-sm font-semibold">Passkey · WebAuthn</div>
+          <div class="text-[10px] font-mono text-[color:var(--color-tangerine)] uppercase tracking-wider">verified</div>
+        </div>
+      </div>
+      <div class="flex items-center justify-between border-b border-white/10 pb-3 last:border-0">
+        <div class="text-xs text-white/60 uppercase tracking-wider">Device</div>
+        <div class="text-right">
+          <div class="text-sm font-semibold">Trusted · 17 days</div>
+          <div class="text-[10px] font-mono text-[color:var(--color-tangerine)] uppercase tracking-wider">ok</div>
+        </div>
+      </div>
+      <div class="flex items-center justify-between border-b border-white/10 pb-3 last:border-0">
+        <div class="text-xs text-white/60 uppercase tracking-wider">Policy</div>
+        <div class="text-right">
+          <div class="text-sm font-semibold">EU · UK · GDPR</div>
+          <div class="text-[10px] font-mono text-[color:var(--color-tangerine)] uppercase tracking-wider">compliant</div>
+        </div>
+      </div></div>
+          <div class="mt-5 flex items-center gap-2 text-[10px] font-mono text-white/40">
+            <span style="display:inline-block;width:16px;height:16px;background:var(--grad-brand);border-radius:4px;"></span> Ideneumo Aegis · v4.2
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="site-footer"></div>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
